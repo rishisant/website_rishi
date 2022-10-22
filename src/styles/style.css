@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lusitana&display=swap');
+
+body {
+    background:rgb(238, 238, 238)
+}
+
+vgtext {
+    font-family: Silkscreen;
+}
+
+vgbody {
+    font-family: "Press Start 2P";
+}
+
+
+/* TypeWriter Effect */
+
+/* Defining Custom Tags to Use For Text Consistency */
+titletext {
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    font-family: Silkscreen;
+    text-shadow: 1px 1px 10px #838383;
+}
+
+subtext {
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    font-family: Silkscreen;
+}
+
+#maintext {
+    justify-content: center;
+    letter-spacing: .05em;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    font-family: Lusitana;
+    line-height: 1.6;
+    
+}
+
+/* Custom tags */
+readable {
+    font-size: 20px;
+    animation: post_display 1.8s;
+}
+readable_a {
+    animation: post_display 0.9s;
+}
+readable_b {
+    animation: post_display 1.55s;
+}
+readable_q {
+    animation: post_display 1.65s;
+}
+readable_g {
+    animation: post_display 1.53s;
+}
+readable_c {
+    animation: post_display 1.05s;
+}
+
+/* Side to Side animation */
+#sidetoside {
+    animation: movehoriz 2s infinite;
+}
+@keyframes movehoriz {
+    25% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+}
+
+@keyframes post_display {
+    0% { visibility: hidden; }
+    99.9% { visibility: hidden; }
+    100% { visibility: visible; }
+}
+
+.typeeffect {
+    overflow: hidden;
+    margin: 0 auto;
+    /* border-right: .15em solid black; */
+    white-space: nowrap;
+    letter-spacing: .4em;
+    animation: typing 3.5s steps(300, end);
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+
+/* Menu Bar */
+.nav {
+    overflow: hidden;
+    font-family: Silkscreen;
+    
+}
+
+.nav a {
+    float: right;
+    color: rgb(36, 36, 36);
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav a.active {
+    background-color: #04AA6D;
+    color:white;
+}
+
+/* Eigood Deployment Image */
+#edeploy {
+    width: 20%;
+    display:block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:auto;
+    margin-right: auto;
+    filter: drop-shadow(2px 2px 5px #000);
+}
+
+/* ChunikBot Deployment Image */
+#chunikbot {
+    width: 20%;
+    display:block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:auto;
+    margin-right: auto;
+    filter: drop-shadow(2px 2px 5px #000);
+}
+
+/* Resume IMG */
+#resume {
+    width: 20%;
+    display:block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:auto;
+    margin-right: auto;
+    filter: drop-shadow(2px 2px 5px #000);
+}
+
+#resume:hover {
+    animation: spin 2s infinite;
+}
+
+@keyframes spin {
+    25% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+}
+/* Invisible Div */
+#invisible {
+    visibility: hidden;
+    margin-top: 50px;
+}
+
+/* Progress Bar */
+.progress-label {
+    position: relative;
+  }
+  
+
+.progress {
+    position: relative;
+    display: inline-block;
+    background: #eee;
+    height: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+.progress::-webkit-progress-value {
+    background:rgb(109, 152, 207);
+}
+
+.progress_d {
+    position: relative;
+    display: inline-block;
+    background: #eee;
+    height: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+.progress_d::-webkit-progress-value {
+    background:rgb(190, 226, 127);
+}
+
+.progress_l {
+    position: relative;
+    display: inline-block;
+    background: #eee;
+    height: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+.progress_l::-webkit-progress-value {
+    background:rgb(218, 167, 142);
+}
+/* .progress::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(124, 31, 31);
+  } */
+  
+/* Cool animation */
+#cooltext {
+    font-family: Silkscreen;
+    animation: glow 5s infinite;
+}
+
+#cooltext_d {
+    font-family: Silkscreen;
+    animation: glow_d 5s infinite;
+}
+
+#cooltext_l {
+    font-family: Silkscreen;
+    animation: glow_l 5s infinite;
+}
+
+@keyframes glow {
+    10% { filter: drop-shadow(2px 2px 3px rgb(62, 192, 232)); }
+    33% { filter: drop-shadow(2px 2px 3px rgb(35, 113, 136)); }
+    65% { filter: drop-shadow(2px 2px 3px rgb(12, 39, 47)); }
+    100% { }
+}
+
+@keyframes glow_d {
+    10% { filter: drop-shadow(2px 2px 3px rgb(133, 225, 102)); }
+    33% { filter: drop-shadow(2px 2px 3px rgb(93, 160, 71)); }
+    65% { filter: drop-shadow(2px 2px 3px rgb(44, 82, 31)); }
+    100% { }
+}
+
+@keyframes glow_l {
+    10% { filter: drop-shadow(2px 2px 3px rgb(221, 148, 70)); }
+    33% { filter: drop-shadow(2px 2px 3px rgb(150, 100, 47)); }
+    65% { filter: drop-shadow(2px 2px 3px rgb(94, 62, 29)); }
+    100% { }
+}
