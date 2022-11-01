@@ -45,8 +45,8 @@ subtext {
     font-family: Work Sans;
     line-height: 1.6;
     /* VISUALIZATION PURPOSES: border: 10px solid #000; */
-    padding-left: 440px;
-    padding-right: 440px;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 #maintext {
     justify-content: center;
@@ -57,8 +57,8 @@ subtext {
     font-family: Work Sans;
     line-height: 1.6;
     /* VISUALIZATION PURPOSES: border: 10px solid #000; */
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 /* Custom tags */
