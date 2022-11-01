@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lusitana&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 
 body {
     background:rgb(238, 238, 238)
@@ -35,20 +36,34 @@ subtext {
     font-family: Silkscreen;
 }
 
+#maintext2 {
+    justify-content: center;
+    letter-spacing: .05em;
+    text-align: left;
+    font-size: 17px;
+    display: flex;
+    font-family: Work Sans;
+    line-height: 1.6;
+    /* VISUALIZATION PURPOSES: border: 10px solid #000; */
+    padding-left: 440px;
+    padding-right: 440px;
+}
 #maintext {
     justify-content: center;
     letter-spacing: .05em;
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     display: flex;
-    font-family: Lusitana;
+    font-family: Work Sans;
     line-height: 1.6;
-    
+    /* VISUALIZATION PURPOSES: border: 10px solid #000; */
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 /* Custom tags */
 readable {
-    font-size: 20px;
+    font-size: 18.5px;
     animation: post_display 1.8s;
 }
 readable_a {
@@ -112,6 +127,7 @@ readable_c {
     text-decoration: none;
     font-size: 20px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .nav a:hover {
